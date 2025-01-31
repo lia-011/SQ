@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(Image/KINABALU.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+
+body {
+    font-family: Poppins, sans-serif;
+    cursor: url(Image/CURSOR\ 2.png), auto;
+}
+
+header {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px;
+    transition: 0.5s ease;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 70px;
+    height: auto;
+    margin-left: -250px;
+}
+
+header.navigation {
+    position: relative;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navigation .navigation-items {
+    display: flex;
+    position: relative;
+    left: 150px;
+}
+
+header .navigation .navigation-items a {
+    position: relative;
+    color: #e64444;
+    font-size: 1rem;
+    font-weight: 750;
+    text-decoration: none; 
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:before {
+    content: '';
+    position: absolute;
+    background: #ffffffdd;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:hover::before {
+    width: 100%;
+}
+
+.dropdown {
+    position: relative; 
+    display: inline-block;
+}
+
+.dropbtn {
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    position: relative; 
+}
+
+.dropbtn:hover {
+    color: #f4a261;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    text-align: justify;
+    top: 100%; 
+    right:inherit;
+    left:inherit;
+    background-color: #ffffff00;
+    width: 190px; 
+    box-sizing: content-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 1px;
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 8px 12px; 
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+}
+
+.dropdown-content a:hover {
+    background-color: #07dc43a6;
+    color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+:root {
+    --primary-color: #79b2d7;
+    --header-font: 'Poppins', sans-serif;
+}
+.culture {
+    padding: 100px;
+    text-align: center; 
+    
+    
+}
+
+.section-container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.section-header {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #000000; 
+    margin-bottom: 1rem; 
+}
+
+.section-subheader {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #11d107; 
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.culture {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.05),
+        transparent
+    );
+}
+
+.culture-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+}
+
+.culture-card {
+    position: relative;
+    max-width: 500px;
+    max-height: 700px;
+    margin: 25px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(19, 206, 184, 0.53);
+}
+
+.culture-card:nth-child(2) {
+    transform: translateY(5rem);
+}
+
+.culture-image img {
+    width: 150%;
+    height: auto;
+    display: flex;
+}
+
+.culture-image::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 50%;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(to top, var(--primary-color), transparent);
+}
+
+.culture-card-content {
+    padding: 20px;
+    height: 300px;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.culture-card-content h4 {
+    padding-top: 140px;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: var(--header-font);
+    color:#11d107;
+}
+
+.culture-card-content p {
+    margin-bottom: 100px;
+    padding-top: 30px;
+}
+
+footer {
+    font-size: 14px;
+}
