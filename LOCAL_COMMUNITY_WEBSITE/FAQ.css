@@ -137,7 +137,7 @@ header .navigation .navigation-items a:hover::before {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #757d8300;
+    background-color: #27694b7c;
     min-width: 160px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
