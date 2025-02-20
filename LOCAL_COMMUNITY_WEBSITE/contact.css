@@ -10,6 +10,7 @@ body{
     overflow: hidden;
     font-family: 'Poppins', sans-serif;
     animation: floatingGradient 10s ease infinite; 
+    cursor: url(Image/CURSOR\ 2.png), auto;
 }
 
 
