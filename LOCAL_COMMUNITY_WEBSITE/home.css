@@ -106,7 +106,7 @@ header .navigation .navigation-items a:hover::before {
     top: 100%; 
     right:inherit;
     left:inherit;
-    background-color: ##27694b7c;
+    background-color: #27694b7c;
     width: 190px; 
     box-sizing: content-box;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
